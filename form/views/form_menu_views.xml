@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+        <data>
+                <record id="form_register_action" model="ir.actions.act_window">
+                        <field name="name">Form Register Action</field>
+                        <field name="res_model">form.register</field>
+                        <field name="view_mode">tree,form</field>
+                </record>
+
+                <menuitem id="menu_form_root" name="Form" 
+                        sequence="-10" action="form_register_action"/>
+
+        </data>
+
+</odoo>

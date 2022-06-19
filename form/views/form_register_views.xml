@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="form_register_view_form" model="ir.ui.view">
+        <field name="name">form.register.view.form</field>
+        <field name="model">form.register</field>
+        <field name="arch" type="xml">
+            <form name="simple_form" string="Simple Form">
+                <sheet>
+                    <div class="oe_title">     
+                        <h1 class="d-flex">
+                            <group name="gp1">
+                                <field name="name" placeholder="For Exp. Nahid"/>
+                            </group>
+                        </h1>
+                    </div>      
+                    <group name="gp1">
+                        <field name="gender"/>
+                    </group>
+                    <group col="4">     
+                        <field name="birth_date"/>
+                        <field name="skills"/>   
+                        <field name="job_type"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="form_register_view_tree" model="ir.ui.view">
+        <field name="name">form.register.view.tree</field>
+        <field name="model">form.register</field>
+        <field name="arch" type="xml">
+            <tree name="form_tree_view" string="Form Tree View">
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="skills"/>
+                <field name="job_type"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>
